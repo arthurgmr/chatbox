@@ -20,6 +20,7 @@ class Setting {
   @CreateDateColumn()
   created_at: Date;  
 
+  //this contructor is run alltime click in newuser;
   constructor() {
     if(!this.id) {
       this.id = uuid()
